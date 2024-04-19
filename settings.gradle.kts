@@ -5,4 +5,4 @@ pluginManagement {
     }
 }
 
-rootProject.name = "flutter_i10n_fold"
+rootProject.name = "flutter_l10n_fold"

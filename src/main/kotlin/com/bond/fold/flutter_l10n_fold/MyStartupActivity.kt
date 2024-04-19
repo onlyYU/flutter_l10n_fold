@@ -1,4 +1,4 @@
-package com.bond.fold.flutter_i10n_fold
+package com.bond.fold.flutter_l10n_fold
 
 import MyEditorFactoryListener
 import com.google.gson.Gson

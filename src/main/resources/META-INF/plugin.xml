@@ -1,21 +1,21 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
-    <id>com.bond.fold.flutter_i10n_fold</id>
+    <id>com.bond.fold.flutter_l10n_fold</id>
 
     <!-- Public plugin name should be written in Title Case.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
-    <name>Flutter_i10n_fold</name>
+    <name>Flutter Intl Fold</name>
 
     <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
-    <vendor email="support@yourcompany.com" url="https://www.yourcompany.com">YourCompany</vendor>
+    <vendor email="horry.linup@gmail.com" url="https://www.yourcompany.com">Horry</vendor>
 
     <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
          Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
     <description><![CDATA[
-    Enter short description for your plugin here.<br>
-    <em>most HTML tags may be used</em>
+    用于dart代码多语言折叠展示<br>
+    仅限于getLanguage 格式的代码显示与折叠
   ]]></description>
 
     <!-- Product and plugin compatibility requirements.
@@ -24,7 +24,11 @@
 
     <!-- Extension points defined by the plugin.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
-    <extensions defaultExtensionNs="com.intellij">
 
+    <extensions defaultExtensionNs="com.intellij">
+        <postStartupActivity implementation="com.bond.fold.flutter_l10n_fold.MyStartupActivity"/>
+    </extensions>
+    <extensions defaultExtensionNs="com.intellij">
+        <lang.foldingBuilder language="Dart" implementationClass="com.bond.fold.flutter_l10n_fold.MyFoldingBuilder"/>
     </extensions>
 </idea-plugin>
