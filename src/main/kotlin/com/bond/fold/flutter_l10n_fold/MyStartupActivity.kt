@@ -1,7 +1,7 @@
 package com.bond.fold.flutter_l10n_fold
 
 import MyEditorFactoryListener
-import com.google.gson.Gson
+import com.google.gson.GsonBuilder
 import com.google.gson.reflect.TypeToken
 import com.intellij.openapi.Disposable
 import com.intellij.openapi.application.ApplicationManager
@@ -31,8 +31,16 @@ class MyStartupActivity : StartupActivity {
     private fun readJsonFile(project: Project) {
         val jsonFolderPath = project.basePath?.let { Paths.get(it, "lib/l10n") }
         val jsonFilePath = jsonFolderPath?.let { getJsonFilePath(it) }
-        val jsonMapType = object : TypeToken<Map<String, String>>() {}.type
-        LanguageData.jsonMap = Gson().fromJson(jsonFilePath?.let { FileReader(it) }, jsonMapType)
+
+        val gson = GsonBuilder()
+                .registerTypeAdapter(object : TypeToken<Map<String, String>>() {}.type, MapTypeAdapter())
+                .create()
+
+        val reader = jsonFilePath?.let { FileReader(it) }
+        if (reader != null) {
+            val jsonMapType = object : TypeToken<Map<String, String>>() {}.type
+            LanguageData.jsonMap = gson.fromJson(reader, jsonMapType)
+        }
     }
 
     private fun getJsonFilePath(folderPath: Path): String {
