@@ -5,19 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4e2a3a3-8bf8-49d0-970a-91ed12d2158b" name="Changes" comment="first commit">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/vv/fold/flutter_l10n_fold/FileWatcher.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/bond/fold/flutter_l10n_fold/MyFoldingBuilder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/bond/fold/flutter_l10n_fold/MyFoldingBuilder.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/bond/fold/flutter_l10n_fold/MyStartupActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/bond/fold/flutter_l10n_fold/MyStartupActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/bond/fold/flutter_l10n_fold/MapTypeAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/vv/fold/flutter_l10n_fold/MapTypeAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/bond/fold/flutter_l10n_fold/MyEditorFactoryListener.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/vv/fold/flutter_l10n_fold/MyEditorFactoryListener.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/bond/fold/flutter_l10n_fold/MyFoldingBuilder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/vv/fold/flutter_l10n_fold/MyFoldingBuilder.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/bond/fold/flutter_l10n_fold/MyPsiElementVisitor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/vv/fold/flutter_l10n_fold/MyPsiElementVisitor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/bond/fold/flutter_l10n_fold/MyStartupActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/vv/fold/flutter_l10n_fold/MyStartupActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterDir="false" />
     </list>
-    <list id="e1a1a5e0-a9c6-46b3-ad34-d1e1fcfb7a59" name="暂存" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/bond/fold/flutter_l10n_fold/DartReflectionHelper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/bond/fold/flutter_l10n_fold/MyPsiElementVisitor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/bond/fold/flutter_l10n_fold/MyPsiElementVisitor.kt" afterDir="false" />
-    </list>
+    <list id="e1a1a5e0-a9c6-46b3-ad34-d1e1fcfb7a59" name="暂存" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -103,37 +101,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build flutter_i10n_fold.executor": "Run",
-    "Gradle.Build flutter_l10n_fold.executor": "Run",
-    "Gradle.Run Plugin.executor": "Run",
-    "Gradle.flutter_i10n_fold [setupDependencies].executor": "Run",
-    "Gradle.flutter_l10n_fold [clean].executor": "Run",
-    "Gradle.flutter_l10n_fold [setupDependencies].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/bihongyu/WorkSpace/Plugin/flutter_l10n_fold",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "show.do.not.copy.http.proxy.settings.to.gradle": "true",
-    "show.migrate.to.gradle.popup": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build flutter_i10n_fold.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build flutter_l10n_fold.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Run Plugin.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.flutter_i10n_fold [setupDependencies].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.flutter_l10n_fold [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.flutter_l10n_fold [setupDependencies].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/bihongyu/WorkSpace/Plugin/flutter_l10n_fold&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;show.do.not.copy.http.proxy.settings.to.gradle&quot;: &quot;true&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Gradle.Run Plugin">
     <configuration name="flutter_l10n_fold [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -194,6 +192,9 @@
       <workItem from="1713426217714" duration="25000" />
       <workItem from="1713426249678" duration="1000" />
       <workItem from="1713426300491" duration="7246000" />
+      <workItem from="1714013330215" duration="39000" />
+      <workItem from="1714036576354" duration="1354000" />
+      <workItem from="1714114974241" duration="5299000" />
     </task>
     <servers />
   </component>

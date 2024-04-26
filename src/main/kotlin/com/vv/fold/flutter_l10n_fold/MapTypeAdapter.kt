@@ -1,4 +1,4 @@
-package com.bond.fold.flutter_l10n_fold
+package com.vv.fold.flutter_l10n_fold
 
 import com.google.gson.Gson
 import com.google.gson.TypeAdapter

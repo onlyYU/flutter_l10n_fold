@@ -1,21 +1,28 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
-    <id>com.bond.fold.flutter_l10n_fold</id>
+    <id>com.vv.fold.flutter_l10n_fold</id>
 
     <!-- Public plugin name should be written in Title Case.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
-    <name>Flutter Intl Fold</name>
+    <name>Flutter Intl Fold VV</name>
 
     <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
-    <vendor email="horry.linup@gmail.com" url="https://www.yourcompany.com">Horry</vendor>
+    <vendor email="horry.linkup@gmail.com" url="https://www.vvtechnology.cn">Horry</vendor>
 
     <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
          Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
     <description><![CDATA[
-    用于dart代码多语言折叠展示<br>
-    仅限于getLanguage 格式的代码显示与折叠
+    <h3>用于dart代码多语言展示</h3>
+    *仅限于getLanguage 格式的代码显示与折叠
+
+
+    <br><br><br>使用前
+    <pre><code>showToast(getLanguage&lt;S&gt;().xxxx_xxxxxxxx);</code></pre>
+
+    <br>使用后
+    <pre><code>showToast(暂无数据);</code></pre>
   ]]></description>
 
     <!-- Product and plugin compatibility requirements.
@@ -26,9 +33,9 @@
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
 
     <extensions defaultExtensionNs="com.intellij">
-        <postStartupActivity implementation="com.bond.fold.flutter_l10n_fold.MyStartupActivity"/>
+        <postStartupActivity implementation="com.vv.fold.flutter_l10n_fold.MyStartupActivity"/>
     </extensions>
     <extensions defaultExtensionNs="com.intellij">
-        <lang.foldingBuilder language="Dart" implementationClass="com.bond.fold.flutter_l10n_fold.MyFoldingBuilder"/>
+        <lang.foldingBuilder language="Dart" implementationClass="com.vv.fold.flutter_l10n_fold.MyFoldingBuilder"/>
     </extensions>
 </idea-plugin>

@@ -12,7 +12,6 @@ class MyEditorFactoryListener : EditorFactoryListener {
         val document = editor.document
         val file = FileDocumentManager.getInstance().getFile(document) ?: return
         val psiFile = PsiDocumentManager.getInstance(project).getPsiFile(document) ?: return
-        val psiManager = PsiManager.getInstance(project)
 
         if (file.extension == "dart") {
             val visitor = MyPsiElementVisitor(mutableListOf())

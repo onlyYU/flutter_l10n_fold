@@ -1,4 +1,4 @@
-package com.bond.fold.flutter_l10n_fold
+package com.vv.fold.flutter_l10n_fold
 
 import MyEditorFactoryListener
 import com.google.gson.GsonBuilder
@@ -17,6 +17,11 @@ object LanguageData {
     var jsonMap: Map<String, String> = mapOf()
 }
 
+object FileConstants {
+    const val JSON_FILE_NAME = "intl_zh.arb"
+    const val JSON_FOLDER_NAME = "lib/l10n"
+}
+
 class MyStartupActivity : StartupActivity {
     override fun runActivity(project: Project) {
         readJsonFile(project)
@@ -24,12 +29,15 @@ class MyStartupActivity : StartupActivity {
         val connection = ApplicationManager.getApplication().messageBus.connect()
         val editorFactory = EditorFactory.getInstance()
         editorFactory.addEditorFactoryListener(MyEditorFactoryListener(), connection as Disposable)
+
+        val fileWatcher = FileWatcher(project)
+        Thread(fileWatcher).start()
     }
 
 
     // 读取文件
-    private fun readJsonFile(project: Project) {
-        val jsonFolderPath = project.basePath?.let { Paths.get(it, "lib/l10n") }
+    public fun readJsonFile(project: Project) {
+        val jsonFolderPath = project.basePath?.let { Paths.get(it, FileConstants.JSON_FOLDER_NAME) }
         val jsonFilePath = jsonFolderPath?.let { getJsonFilePath(it) }
 
         val gson = GsonBuilder()
@@ -44,7 +52,7 @@ class MyStartupActivity : StartupActivity {
     }
 
     private fun getJsonFilePath(folderPath: Path): String {
-        val zhFilePath = folderPath.resolve("intl_zh.arb").toString()
+        val zhFilePath = folderPath.resolve(FileConstants.JSON_FILE_NAME).toString()
         if (!Files.exists(Paths.get(zhFilePath))) {
             throw RuntimeException("intl_zh.arb file not found")
         }
