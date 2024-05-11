@@ -4,16 +4,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4e2a3a3-8bf8-49d0-970a-91ed12d2158b" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/vv/fold/flutter_l10n_fold/FileWatcher.kt" afterDir="false" />
+    <list default="true" id="c4e2a3a3-8bf8-49d0-970a-91ed12d2158b" name="Changes" comment="feature #添加改动监听">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/bond/fold/flutter_l10n_fold/MapTypeAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/vv/fold/flutter_l10n_fold/MapTypeAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/bond/fold/flutter_l10n_fold/MyEditorFactoryListener.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/vv/fold/flutter_l10n_fold/MyEditorFactoryListener.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/bond/fold/flutter_l10n_fold/MyFoldingBuilder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/vv/fold/flutter_l10n_fold/MyFoldingBuilder.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/bond/fold/flutter_l10n_fold/MyPsiElementVisitor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/vv/fold/flutter_l10n_fold/MyPsiElementVisitor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/bond/fold/flutter_l10n_fold/MyStartupActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/vv/fold/flutter_l10n_fold/MyStartupActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterDir="false" />
     </list>
     <list id="e1a1a5e0-a9c6-46b3-ad34-d1e1fcfb7a59" name="暂存" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,6 +66,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
@@ -81,6 +78,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar:///Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Class.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2023.1.5/2d48b199b6b41ad2dd415ed933e95a3ca8d3979/ideaIC-2023.1.5/lib/util.jar!/com/intellij/openapi/project/Project.class" root0="SKIP_INSPECTION" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -115,7 +113,7 @@
     &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/bihongyu/WorkSpace/Plugin/flutter_l10n_fold&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -194,12 +192,62 @@
       <workItem from="1713426300491" duration="7246000" />
       <workItem from="1714013330215" duration="39000" />
       <workItem from="1714036576354" duration="1354000" />
-      <workItem from="1714114974241" duration="5299000" />
+      <workItem from="1714114974241" duration="5941000" />
+      <workItem from="1714289050588" duration="4512000" />
+      <workItem from="1714384591507" duration="14000" />
+      <workItem from="1715058362905" duration="2211000" />
     </task>
+    <task id="LOCAL-00001" summary="feature #添加改动监听">
+      <option name="closed" value="true" />
+      <created>1714121268566</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714121268567</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="develop" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feature #添加改动监听" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature #添加改动监听" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
