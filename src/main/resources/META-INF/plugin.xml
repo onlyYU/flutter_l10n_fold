@@ -14,15 +14,15 @@
          Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
     <description><![CDATA[
-    <h3>用于dart代码多语言展示</h3>
-    *仅限于getLanguage 格式的代码显示与折叠
+    <h3>For multi-language display of Dart code</h3>
+    *Only the display and folding of code in the getLanguage format is allowed
 
 
-    <br><br><br>使用前
+    <br><br><br>Before use
     <pre><code>showToast(getLanguage&lt;S&gt;().xxxx_xxxxxxxx);</code></pre>
 
-    <br>使用后
-    <pre><code>showToast(暂无数据);</code></pre>
+    <br>After use
+    <pre><code>showToast(no data);</code></pre>
   ]]></description>
 
     <!-- Product and plugin compatibility requirements.

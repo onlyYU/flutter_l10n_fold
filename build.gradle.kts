@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.vv.fold"
-version = "1.0.0-SNAPSHOT"
+version = "1.0.2-SNAPSHOT"
 
 repositories {
     mavenCentral()

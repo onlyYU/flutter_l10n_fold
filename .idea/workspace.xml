@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4e2a3a3-8bf8-49d0-970a-91ed12d2158b" name="Changes" comment="feature #添加改动监听">
+    <list default="true" id="c4e2a3a3-8bf8-49d0-970a-91ed12d2158b" name="Changes" comment="feature #add icon">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterDir="false" />
     </list>
     <list id="e1a1a5e0-a9c6-46b3-ad34-d1e1fcfb7a59" name="暂存" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +49,19 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="flutter_l10n_fold" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
+                <item name="build setup" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="flutter_l10n_fold" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="documentation" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="flutter_l10n_fold" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="intellij" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -105,6 +119,7 @@
     &quot;Gradle.Build flutter_l10n_fold.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Run Plugin.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.flutter_i10n_fold [setupDependencies].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.flutter_l10n_fold [buildPlugin].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.flutter_l10n_fold [clean].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.flutter_l10n_fold [setupDependencies].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
@@ -130,7 +145,34 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.Run Plugin">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/META-INF" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.flutter_l10n_fold [buildPlugin]">
+    <configuration name="flutter_l10n_fold [buildPlugin]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="buildPlugin" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="flutter_l10n_fold [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -155,6 +197,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.flutter_l10n_fold [buildPlugin]" />
         <item itemvalue="Gradle.flutter_l10n_fold [clean]" />
       </list>
     </recent_temporary>
@@ -196,6 +239,9 @@
       <workItem from="1714289050588" duration="4512000" />
       <workItem from="1714384591507" duration="14000" />
       <workItem from="1715058362905" duration="2211000" />
+      <workItem from="1715418856075" duration="2485000" />
+      <workItem from="1715757214494" duration="1607000" />
+      <workItem from="1716197904075" duration="425000" />
     </task>
     <task id="LOCAL-00001" summary="feature #添加改动监听">
       <option name="closed" value="true" />
@@ -205,7 +251,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714121268567</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feature #add icon">
+      <option name="closed" value="true" />
+      <created>1715418954023</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715418954023</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,7 +301,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feature #添加改动监听" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature #添加改动监听" />
+    <MESSAGE value="feature #add icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature #add icon" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
