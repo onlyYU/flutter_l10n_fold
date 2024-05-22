@@ -5,23 +5,34 @@ import java.nio.file.*
 
 class FileWatcher(private val project: Project) : Runnable {
     private val watchService: WatchService = FileSystems.getDefault().newWatchService()
+    private var isFileExists = false
 
     init {
         val path = project.basePath?.let { Paths.get(it, FileConstants.JSON_FOLDER_NAME) }
-        path?.register(watchService, StandardWatchEventKinds.ENTRY_MODIFY)
+        if (path != null && Files.exists(path)) {
+            val filePath = path.resolve(FileConstants.JSON_FILE_NAME)
+            if (Files.exists(filePath)) {
+                path.register(watchService, StandardWatchEventKinds.ENTRY_MODIFY)
+                isFileExists = true
+            }
+        }
     }
 
     override fun run() {
+        if (!isFileExists) {
+            return
+        }
+
         try {
             while (true) {
-                val key = watchService.take()
-                for (event in key.pollEvents()) {
+                val key = watchService?.take()
+                for (event in key?.pollEvents() ?: emptyList()) {
                     val context = event.context() as Path
                     if (context.fileName.toString() == FileConstants.JSON_FILE_NAME) {
                         MyStartupActivity().readJsonFile(project)
                     }
                 }
-                if (!key.reset()) {
+                if (key != null && !key.reset()) {
                     break
                 }
             }

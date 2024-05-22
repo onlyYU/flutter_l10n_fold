@@ -40,6 +40,11 @@ class MyStartupActivity : StartupActivity {
         val jsonFolderPath = project.basePath?.let { Paths.get(it, FileConstants.JSON_FOLDER_NAME) }
         val jsonFilePath = jsonFolderPath?.let { getJsonFilePath(it) }
 
+        // 文件不存在，直接返回
+        if (jsonFilePath == null) {
+            return
+        }
+
         val gson = GsonBuilder()
                 .registerTypeAdapter(object : TypeToken<Map<String, String>>() {}.type, MapTypeAdapter())
                 .create()
@@ -51,11 +56,17 @@ class MyStartupActivity : StartupActivity {
         }
     }
 
-    private fun getJsonFilePath(folderPath: Path): String {
+    private fun getJsonFilePath(folderPath: Path): String? {
         val zhFilePath = folderPath.resolve(FileConstants.JSON_FILE_NAME).toString()
-        if (!Files.exists(Paths.get(zhFilePath))) {
-            throw RuntimeException("intl_zh.arb file not found")
+//        if (!Files.exists(Paths.get(zhFilePath))) {
+//            throw RuntimeException("intl_zh.arb file not found")
+//        }
+//        return zhFilePath
+
+        return if (Files.exists(Paths.get(zhFilePath))) {
+            zhFilePath
+        } else {
+            null
         }
-        return zhFilePath
     }
 }
