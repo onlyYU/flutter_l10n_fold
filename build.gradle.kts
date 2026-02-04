@@ -1,14 +1,20 @@
 plugins {
     id("java")
-    id("org.jetbrains.kotlin.jvm") version "1.9.21"
-    id("org.jetbrains.intellij") version "1.16.1"
+    id("org.jetbrains.kotlin.jvm") version "1.9.25"
+    id("org.jetbrains.intellij") version "1.17.4"
 }
 
 group = "com.vv.fold"
-version = "1.0.0-SNAPSHOT"
+version = "1.0.7-SNAPSHOT"
 
 repositories {
     mavenCentral()
+}
+
+java {
+    toolchain {
+        languageVersion.set(org.gradle.jvm.toolchain.JavaLanguageVersion.of(17))
+    }
 }
 
 // Configure Gradle IntelliJ Plugin
@@ -16,6 +22,7 @@ repositories {
 intellij {
     version.set("2022.2.1")
     type.set("IC") // Target IDE Platform
+    updateSinceUntilBuild.set(false) // Disable auto-update to fully control since/until build
 
     plugins.set(listOf(/* Plugin Dependencies */))
 }
@@ -23,16 +30,16 @@ intellij {
 tasks {
     // Set the JVM compatibility versions
     withType<JavaCompile> {
-        sourceCompatibility = "17"
-        targetCompatibility = "17"
+        sourceCompatibility = "11"
+        targetCompatibility = "11"
     }
     withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
-        kotlinOptions.jvmTarget = "17"
+        kotlinOptions.jvmTarget = "11"
     }
 
     patchPluginXml {
         sinceBuild.set("211")
-        untilBuild.set("241.*")
+        untilBuild.set(provider { null })
     }
 
     signPlugin {

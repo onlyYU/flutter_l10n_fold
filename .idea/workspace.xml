@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4e2a3a3-8bf8-49d0-970a-91ed12d2158b" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/vv/fold/flutter_l10n_fold/FileWatcher.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/bond/fold/flutter_l10n_fold/MapTypeAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/vv/fold/flutter_l10n_fold/MapTypeAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/bond/fold/flutter_l10n_fold/MyEditorFactoryListener.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/vv/fold/flutter_l10n_fold/MyEditorFactoryListener.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/bond/fold/flutter_l10n_fold/MyFoldingBuilder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/vv/fold/flutter_l10n_fold/MyFoldingBuilder.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/bond/fold/flutter_l10n_fold/MyPsiElementVisitor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/vv/fold/flutter_l10n_fold/MyPsiElementVisitor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/bond/fold/flutter_l10n_fold/MyStartupActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/vv/fold/flutter_l10n_fold/MyStartupActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
     </list>
     <list id="e1a1a5e0-a9c6-46b3-ad34-d1e1fcfb7a59" name="暂存" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +18,11 @@
   </component>
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_/Users/bihongyu/WorkSpace/Plugin/flutter_l10n_fold" value="2fDX0UlNWoh3UpRO24UN66b07wd" />
+    </persistenceIdMap>
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -79,6 +79,7 @@
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
   </component>
+  <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$" gradleHome="$USER_HOME$/.gradle/wrapper/dists/gradle-8.5-bin/5t9huq95ubn472n8rpzujfbqh/gradle-8.5" javaHome="/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home" gradleVersion="8.5" />
   <component name="HighlightingSettingsPerFile">
     <setting file="jar:///Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Class.java" root0="SKIP_INSPECTION" />
   </component>
@@ -96,42 +97,43 @@
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="2fDX0UlNWoh3UpRO24UN66b07wd" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.Build flutter_i10n_fold.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build flutter_l10n_fold.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Run Plugin.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.flutter_i10n_fold [setupDependencies].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.flutter_l10n_fold [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.flutter_l10n_fold [setupDependencies].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/bihongyu/WorkSpace/Plugin/flutter_l10n_fold&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;show.do.not.copy.http.proxy.settings.to.gradle&quot;: &quot;true&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build flutter_i10n_fold.executor": "Run",
+    "Gradle.Build flutter_l10n_fold.executor": "Run",
+    "Gradle.Run Plugin.executor": "Run",
+    "Gradle.flutter_i10n_fold [setupDependencies].executor": "Run",
+    "Gradle.flutter_l10n_fold [clean].executor": "Run",
+    "Gradle.flutter_l10n_fold [setupDependencies].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/bihongyu/WorkSpace/Plugin/flutter_l10n_fold",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "show.do.not.copy.http.proxy.settings.to.gradle": "true",
+    "show.migrate.to.gradle.popup": "false",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Gradle.Run Plugin">
     <configuration name="flutter_l10n_fold [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -164,8 +166,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-11.0.22-corretto-11.0.22-4caba194b151-396cc1b2" />
-        <option value="jdk-18.0.2-corretto-18.0.2-4caba194b151-68fdadd5" />
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.28238.7" />
+        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-IU-252.28238.7" />
       </set>
     </attachedChunks>
   </component>
@@ -195,6 +197,7 @@
       <workItem from="1714013330215" duration="39000" />
       <workItem from="1714036576354" duration="1354000" />
       <workItem from="1714114974241" duration="5299000" />
+      <workItem from="1770197207519" duration="110000" />
     </task>
     <servers />
   </component>
@@ -210,5 +213,13 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
   </component>
 </project>
