@@ -36,25 +36,33 @@ class MyStartupActivity : StartupActivity {
 
 
     // 读取文件
-    public fun readJsonFile(project: Project) {
+    fun readJsonFile(project: Project) {
         val jsonFolderPath = project.basePath?.let { Paths.get(it, FileConstants.JSON_FOLDER_NAME) }
         val jsonFilePath = jsonFolderPath?.let { getJsonFilePath(it) }
+
+        if (jsonFilePath == null) {
+            return
+        }
 
         val gson = GsonBuilder()
                 .registerTypeAdapter(object : TypeToken<Map<String, String>>() {}.type, MapTypeAdapter())
                 .create()
 
-        val reader = jsonFilePath?.let { FileReader(it) }
-        if (reader != null) {
-            val jsonMapType = object : TypeToken<Map<String, String>>() {}.type
-            LanguageData.jsonMap = gson.fromJson(reader, jsonMapType)
+        try {
+            FileReader(jsonFilePath).use { reader ->
+                val jsonMapType = object : TypeToken<Map<String, String>>() {}.type
+                LanguageData.jsonMap = gson.fromJson(reader, jsonMapType)
+            }
+        } catch (e: Exception) {
+            // Ignore parsing errors or file reading errors
+            e.printStackTrace()
         }
     }
 
-    private fun getJsonFilePath(folderPath: Path): String {
+    private fun getJsonFilePath(folderPath: Path): String? {
         val zhFilePath = folderPath.resolve(FileConstants.JSON_FILE_NAME).toString()
         if (!Files.exists(Paths.get(zhFilePath))) {
-            throw RuntimeException("intl_zh.arb file not found")
+            return null
         }
         return zhFilePath
     }

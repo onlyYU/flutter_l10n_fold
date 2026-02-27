@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4e2a3a3-8bf8-49d0-970a-91ed12d2158b" name="Changes" comment="版本兼容1">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="c4e2a3a3-8bf8-49d0-970a-91ed12d2158b" name="Changes" comment="版本兼容&amp;更新图表">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/pluginIcon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/pluginIcon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/vv/fold/flutter_l10n_fold/FileWatcher.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/vv/fold/flutter_l10n_fold/FileWatcher.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/vv/fold/flutter_l10n_fold/MyStartupActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/vv/fold/flutter_l10n_fold/MyStartupActivity.kt" afterDir="false" />
     </list>
     <list id="e1a1a5e0-a9c6-46b3-ad34-d1e1fcfb7a59" name="暂存" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -211,7 +209,7 @@
       <workItem from="1770197207519" duration="1259000" />
       <workItem from="1770198501709" duration="783000" />
       <workItem from="1772158196481" duration="2960000" />
-      <workItem from="1772161186808" duration="331000" />
+      <workItem from="1772161186808" duration="1441000" />
     </task>
     <task id="LOCAL-00001" summary="版本兼容">
       <option name="closed" value="true" />
@@ -229,7 +227,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770198422130</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="版本兼容&amp;更新图表">
+      <option name="closed" value="true" />
+      <created>1772161596866</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1772161596866</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,7 +244,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="版本兼容" />
     <MESSAGE value="版本兼容1" />
-    <option name="LAST_COMMIT_MESSAGE" value="版本兼容1" />
+    <MESSAGE value="版本兼容&amp;更新图表" />
+    <option name="LAST_COMMIT_MESSAGE" value="版本兼容&amp;更新图表" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

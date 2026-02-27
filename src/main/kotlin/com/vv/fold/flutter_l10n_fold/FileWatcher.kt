@@ -8,7 +8,13 @@ class FileWatcher(private val project: Project) : Runnable {
 
     init {
         val path = project.basePath?.let { Paths.get(it, FileConstants.JSON_FOLDER_NAME) }
-        path?.register(watchService, StandardWatchEventKinds.ENTRY_MODIFY)
+        try {
+            if (path != null && Files.exists(path)) {
+                path.register(watchService, StandardWatchEventKinds.ENTRY_MODIFY)
+            }
+        } catch (e: Exception) {
+            // Ignore if folder doesn't exist or can't be watched
+        }
     }
 
     override fun run() {
