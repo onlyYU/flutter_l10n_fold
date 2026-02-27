@@ -13,8 +13,7 @@
     <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
          Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
-    <description><![CDATA[
-    <h3>Flutter Localization Code Folding Plugin</h3>
+    <description><![CDATA[<h3>Flutter Localization Code Folding Plugin</h3>
     This plugin helps developers by folding the localization code to display the actual text content directly in the editor.
     It specifically supports the `getLanguage` format, making internationalization code much easier to read.
     <br/><br/>

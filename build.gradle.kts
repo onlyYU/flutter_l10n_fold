@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.vv.fold"
-version = "1.0.7-SNAPSHOT"
+version = "1.0.8-SNAPSHOT"
 
 repositories {
     mavenCentral()
@@ -52,5 +52,11 @@ intellijPlatform {
 
     publishing {
         token = System.getenv("PUBLISH_TOKEN")
+    }
+}
+
+tasks {
+    buildSearchableOptions {
+        enabled = false
     }
 }
